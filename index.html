@@ -6,40 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu primeiro projeto</title>
     <!--Titulo do arquivo-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h2>Dev Contábil</h2>
-      <!--Titulo Principal-->
-      <nav>
-        <!--Links do titulo-->
-        <a href="">Quem somos</a>
-        <a href="">Serviços</a>
-        <a href="">Contato</a>
-      </nav>
-    </header>
-    <h1>Dev Contábil</h1>
-    <!--Titulo do backgraud img-->
-    <div>
-      <form>
-        <!--Formulario-->
+    <div class="caixa-superior">
+      <div class="cabecalho">
+        <h2 class="titulo-cabecalho">Dev Contábil</h2>
+        <!--Titulo Principal-->
+        <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a
+        ><!--Links do titulo-->
+        <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+        <a class="link-cabecalho">Contato</a>
+      </div>
+      <h1>Dev Contábil</h1>
+      <form action="https://formsubmit.co/flaflugustavopereira@hotmail.com" method="POST"/>
         <h3>Entre em contato</h3>
-        <label> Nome <input / placeholder="Digite seu Nome"> </label>
-        <label> E-mail <input / placeholder="Digite seu E-mail"> </label>
+        <label> Nome <input type="text" name="Nome" / placeholder="Digite seu Nome" required> </label>
+        <label> E-mail <input type="email" name="email" / placeholder="Digite seu E-mail" required> </label>
+        <label> Whatsapp <input type="tel" name="telefone" / placeholder="Digite seu Numero de telefone" required> </label>
         <label>
           Fale Conosco
-          <textarea placeholder="Qual a sua Duvida"></textarea>
+          <textarea name="info"  placeholder="Qual a sua Duvida"></textarea>
         </label>
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
     </div>
-    <!--Sub-titulo-->
-    <div>
-      <h2>Nossos Serviços</h2>
-      <div>
+    <h2 id="titulo-meio">Nossos Serviços</h2>
+    <!--sub-titulo-->
+    <div class="caixa-central">
+      <div class="card">
         <h3>Contabilidade completa</h3>
+        <!---Sub-titulo-do-titulo-->
         <ul>
+          <!--Listas não ordernadas-->
           <li>Imposto de Renda</li>
           <li>Imposto de Renda</li>
           <li>Imposto de Renda</li>
@@ -47,7 +46,8 @@
           <li>Imposto de Renda</li>
         </ul>
       </div>
-      <div>
+
+      <div class="card">
         <h3>Cuidamos do seu negocio</h3>
         <ul>
           <li>Imposto de Renda</li>
@@ -57,7 +57,8 @@
           <li>Imposto de Renda</li>
         </ul>
       </div>
-      <div>
+
+      <div class="card">
         <h3>Cuidamos de você</h3>
         <ul>
           <li>Imposto de Renda</li>
@@ -68,10 +69,11 @@
         </ul>
       </div>
     </div>
-    <div>
-      <h2>Sobre nós</h2>
+    <div class="caixa-inferior">
+      <h2 id="titulo-inferior">Sobre nós</h2>
       <p>
-        Estamos presente no mercado há mais de 4 décadas auxiliando nossos
+        <blockquote>
+          Estamos presente no mercado há mais de 4 décadas auxiliando nossos
         clientes nacionais e internacionais que já atuam ou desejam abrir seus
         negócios e ingressar no Brasil. Assessoramos investidores que queiram
         prospectar seus negócios no Brasil e investidores (“brasileiros”)
@@ -85,6 +87,7 @@
         IFRS. Assim, o Planejamento das Operações e suas consequências
         tributárias passam a ser condições de competitividade, inclusive
         sugerindo incorporação ou desmembramento de atividades.
+        </blockquote> 
       </p>
     </div>
   </body>

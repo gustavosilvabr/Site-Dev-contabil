@@ -1,3 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Passion+One&family=Sriracha&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.caixa-superior {
+  background-image: url("./imagens/backgroud-principal.png");;
+  height: 100vh;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  
+  
+}
+.cabecalho{
+    padding-top : 30px;
+    padding-left: 50px;
+}
+.titulo-cabecalho{
+    font-size: 35px;
+    color: white;
+    display: inline;
+}
+.link-cabecalho{
+    font-size: 17px;
+    color: white;
+    display: inline;
+    margin-left: 35px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: 115px;
+    text-decoration: none;
+    
+}
 h1{
-    color: red;
+    font-size: 70px;
+    color: white;
+    position: relative;
+    top: 450px;
+    margin:65px;
+}
+
+
+form{
+    background-color: white;
+    width: 360px;
+    height: 590px;
+    border-radius: 9px;
+    display: block;
+    float: right;
+    margin-right: 15px;
+    padding: 25px;
+    position: relative;
+    
+    
+}
+form>h3{
+    text-align: center;
+    font-size: 24px;
+    color: #252B42;
+    margin-bottom: 30px;
+}
+input{
+    display: block;
+    background: #F9F9F9;
+    border:1px solid #E6E6E6;
+    border-radius: 5px;
+    width: 290px;
+    height: 44px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+label{
+    font-size: 18px;
+    color: #252B42;
+    margin: 3px;
+
+}
+textarea{
+    display: block;
+    width: 300px;
+    height: 90px;
+    background: #F9F9F9;
+    border:1px solid #E6E6E6;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+button{
+        width: 250px;
+        height: 52px;
+        cursor: pointer;
+        border:none;
+        border-radius: 5px;
+        background-color:#40BB15 ;
+        color:white;
+        margin-top:1px ;
+        margin-left: 35px;
+}
+.caixa-central{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+#titulo-meio{
+    font-size: 40px;
+    color: #252B42;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.card{
+  
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #A9D6FF;
+    margin-bottom: 10px;
+  
+}
+.card >h3{
+    background-color:#219653 ;
+    color: white;
+    padding: 15px;
+    border-radius:10px 10px 0px 0px;
+}
+ul{
+    padding: 20px;
+}
+li{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.cards{
+    display: inline;
+}
+.caixa-inferior{
+    background-color:#1f2647; 
+    color:white ;
+    text-align: justify;
+    padding: 15px 50px 50px 50px;
+    font-size: 18px;
+}
+#titulo-inferior{
+
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-size: 35px;
+
 }
