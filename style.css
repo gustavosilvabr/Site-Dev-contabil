@@ -9,7 +9,7 @@
 .caixa-superior {
   background-image: url("./imagens/backgroud-principal.png");;
   height: 100vh;
-  background-size: 130%;
+  background-size: 137%;
   background-repeat: no-repeat;
   
   
@@ -45,23 +45,26 @@ h1{
 
 
 form{
+    opacity: 0;
+    transition: opacity 1s linear;
     background-color: white;
     width: 360px;
-    height: 590px;
+    height: 550px;
     border-radius: 9px;
     display: block;
     float: right;
     margin-right: 15px;
     padding: 25px;
     position: relative;
-    
-    
+}
+.mostrar-formulario{
+    opacity: 0.96;
 }
 form>h3{
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #252B42;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 input{
     display: block;
@@ -71,7 +74,7 @@ input{
     width: 290px;
     height: 44px;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
     padding-left: 20px;
     padding-right: 10px;
     cursor: pointer;
@@ -85,7 +88,7 @@ label{
 textarea{
     display: block;
     width: 300px;
-    height: 90px;
+    height: 70px;
     background: #F9F9F9;
     border:1px solid #E6E6E6;
     border-radius: 5px;
@@ -113,7 +116,7 @@ button{
 #titulo-meio{
     font-size: 40px;
     color: #252B42;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -150,11 +153,9 @@ li{
     font-size: 18px;
 }
 #titulo-inferior{
-
     text-align: center;
     padding: 20px;
     margin-bottom: 5px;
     margin-top: 25px;
     font-size: 35px;
-
 }

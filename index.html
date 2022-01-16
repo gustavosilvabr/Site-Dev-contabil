@@ -5,18 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu primeiro projeto</title>
-    <!--Titulo do arquivo-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="caixa-superior">
       <div class="cabecalho">
         <h2 class="titulo-cabecalho">Dev Contábil</h2>
-        <!--Titulo Principal-->
         <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a
-        ><!--Links do titulo-->
+        >
         <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
-        <a class="link-cabecalho" onclick="chamei()">Contato</a>
+        <a class="link-cabecalho" onclick="formulario_on()">Contato</a>
       </div>
       <h1>Dev Contábil</h1>
       <form id="formulario-contato" action="https://formsubmit.co/flaflugustavopereira@hotmail.com" method="POST"/>
@@ -28,17 +26,14 @@
           Fale Conosco
           <textarea name="info"  placeholder="Qual a sua Duvida"></textarea>
         </label>
-        <button type="submit">Enviar</button>
+        <button type="submit"><strong>Enviar</strong> </button>
       </form>
     </div>
-    <h2 id="titulo-meio">Nossos Serviços</h2>
-    <!--sub-titulo-->
+    <h2 id="titulo-meio">Nossos Serviços</h2> 
     <div class="caixa-central">
       <div class="card">
         <h3>Contabilidade completa</h3>
-        <!---Sub-titulo-do-titulo-->
         <ul>
-          <!--Listas não ordernadas-->
           <li>Imposto de Renda</li>
           <li>Imposto de Renda</li>
           <li>Imposto de Renda</li>
@@ -46,7 +41,6 @@
           <li>Imposto de Renda</li>
         </ul>
       </div>
-
       <div class="card">
         <h3>Cuidamos do seu negocio</h3>
         <ul>
@@ -89,19 +83,13 @@
         sugerindo incorporação ou desmembramento de atividades.
         </blockquote> 
       </p>
-    </div>
-   
-  
+    </div>  
      </body>
      <script>
       let formulario = document.getElementById("formulario-contato")
-      console.log(formulario)
-      
-      function chamei(){
-            console.log("um ")
-            console.log("e agora patrao")
-      }
-      chamei()
-    
+      console.log(formulario)   
+     function formulario_on(){
+       formulario.className = "mostrar-formulario"
+     } 
     </script>
 </html>
