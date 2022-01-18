@@ -11,19 +11,19 @@
   height: 100vh;
   background-size: 137%;
   background-repeat: no-repeat;
-  
-  
 }
 .cabecalho{
     padding-top : 30px;
     padding-left: 50px;
 }
 .titulo-cabecalho{
+  
     font-size: 35px;
     color: white;
     display: inline;
 }
 .link-cabecalho{
+    
     font-size: 17px;
     color: white;
     display: inline;
@@ -36,9 +36,9 @@
     
 }
 h1{
-    font-size: 70px;
+    font-size: 5em;
     color: white;
-    position: relative;
+    position: absolute;
     top: 450px;
     margin:65px;
 }
